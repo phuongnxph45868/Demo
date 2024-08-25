@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xin lỗi Khánh Linh</title>
+    <style>
+      /* Đảm bảo rằng body và html không tràn ra ngoài kích thước của viewport */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Ngăn chặn tràn ngang */
+        max-width: 100%; /* Đảm bảo chiều rộng không vượt quá 100% */
+        box-sizing: border-box;
+      }
+
+      /* Đảm bảo rằng iframe chiếm toàn bộ chiều rộng của trang mà không gây tràn */
+      iframe {
+        display: block;
+        max-width: 100%;
+        width: 100vw; /* Chiều rộng bằng với chiều rộng của viewport */
+        height: 500px; /* Chiều cao tùy chỉnh, có thể thay đổi nếu cần */
+      }
+    </style>
   </head>
   <body>
     <iframe
       src="https://phamvulinh18.github.io/crush4/"
-      width="100%"
-      height="500px"
       style="border: none"
     ></iframe>
   </body>
