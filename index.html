@@ -3,31 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xin lỗi Khánh Linh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-      /* Đảm bảo rằng body và html không tràn ra ngoài kích thước của viewport */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Ngăn chặn tràn ngang */
-        max-width: 100%; /* Đảm bảo chiều rộng không vượt quá 100% */
-        box-sizing: border-box;
-      }
-
-      /* Đảm bảo rằng iframe chiếm toàn bộ chiều rộng của trang mà không gây tràn */
-      iframe {
-        display: block;
-        max-width: 100%;
-        width: 100vw; /* Chiều rộng bằng với chiều rộng của viewport */
-        height: 500px; /* Chiều cao tùy chỉnh, có thể thay đổi nếu cần */
+      .title span {
+        font-size: 1.5em; /* Kích thước chữ 1.5em */
       }
     </style>
+    <title>Valentine</title>
   </head>
   <body>
-    <iframe
-      src="https://phamvulinh18.github.io/crush4/"
-      style="border: none"
-    ></iframe>
+    <main class="container">
+      <img
+        class="cat-img"
+        src="https://media.giphy.com/media/SVkhYVCi8fKPKvypi6/giphy.gif"
+        alt="Picture of a cat"
+      />
+      <p class="title">
+        Bé iuu ơi choo anhh xinn lỗi nhóooo😭<br /><span
+          >Bé hong chọn hoặc thoát là tha lỗi cho tớ đấy nhé
+        </span>
+      </p>
+      <div class="buttons">
+        <button type="button" class="btn btn--yes">Em chấp nhận</button>
+        <button type="button" class="btn btn--no">Không bao giờ</button>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
